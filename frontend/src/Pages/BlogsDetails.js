@@ -13,7 +13,7 @@ function BlogsDetails() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/blogs/${id}`);
+        const response = await fetch(`https://consulting-4rbe.onrender.com/api/blogs/${id}`);
         if (response.ok) {
           const data = await response.json();
           setBlog(data);
