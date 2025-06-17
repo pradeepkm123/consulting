@@ -81,7 +81,7 @@ function BlogsDetails() {
                 <div className="row pt-32">
                   <div className="col-lg-12 col-md-6">
                     <div className="port_details_thumb">
-                      <img src={`http://localhost:5000/${blog.imageUrl}`} alt={blog.title} style={{ width: '100%' }} />
+                      <img src={`https://consulting-4rbe.onrender.com/${blog.imageUrl}`} alt={blog.title} style={{ width: '100%' }} />
                     </div>
                   </div>
                 </div>
