@@ -122,16 +122,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-3">
-                            <div className="consalt_header-right">
-                                <div className="header-button style_two">
-                                    <a href="contact.html">Get A Quote <i className="las la-long-arrow-alt-right"></i></a>
-                                </div>
-                                <div className="sidebar-btn">
-                                    <div className="nav-btn navSidebar-button" onClick={toggleSidebar}><span><i className="las la-bars"></i></span></div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
