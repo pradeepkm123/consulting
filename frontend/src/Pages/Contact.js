@@ -29,7 +29,7 @@ function Contact() {
     setLoading(true); // Set loading to true when starting submission
 
     try {
-      const response = await fetch('http://localhost:5000/api/contact/submit', {
+      const response = await fetch('https://consulting-4rbe.onrender.com/api/contact/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
