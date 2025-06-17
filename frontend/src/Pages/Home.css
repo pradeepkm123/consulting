@@ -1,0 +1,30 @@
+.header-menu{
+    margin-top: -4%;
+}
+section.hero_area{
+    border-radius: 50px;
+    background-size: cover;
+}
+.header-menu ul li{
+    margin: 0 15px 0;
+}
+.category-item i {
+    font-size: 23px;
+}
+.tag-icon i{
+    font-size: 13px;
+}
+
+.client-slide{
+    justify-items: center;
+}
+.slick-slide{
+    padding: 15px;
+}
+
+@media only screen and (max-width: 747px) {
+    #mob{
+        display: none !important;
+    }
+}
+
