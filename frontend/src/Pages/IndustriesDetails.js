@@ -10,7 +10,7 @@ function IndustriesDetails() {
     const [industry, setIndustry] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const BASE_URL = 'http://localhost:5000'; // Change this for production
+    const BASE_URL = 'https://consulting-4rbe.onrender.com'; // Change this for production
 
     useEffect(() => {
         const fetchIndustryDetails = async () => {
