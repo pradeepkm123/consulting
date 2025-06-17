@@ -12,7 +12,7 @@ function OurServices() {
     useEffect(() => {
         const fetchServices = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/services');
+                const response = await fetch('https://consulting-4rbe.onrender.com/api/services');
                 if (response.ok) {
                     const data = await response.json();
                     setServices(Array.isArray(data) ? data : []);
