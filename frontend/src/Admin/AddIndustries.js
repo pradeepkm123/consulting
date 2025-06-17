@@ -82,7 +82,7 @@ function AddIndustries({ isOpen, toggleDrawer, onIndustrySubmit, industry }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = industry ? `http://localhost:5000/api/industries/${industry._id}` : 'http://localhost:5000/api/industries';
+      const url = industry ? `https://consulting-4rbe.onrender.com/api/industries/${industry._id}` : 'https://consulting-4rbe.onrender.com/api/industries';
       const method = industry ? 'PUT' : 'POST';
 
       const response = await fetch(url, {
