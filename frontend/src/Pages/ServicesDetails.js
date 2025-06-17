@@ -10,7 +10,7 @@
 //   useEffect(() => {
 //     const fetchService = async () => {
 //       try {
-//         const response = await fetch(`http://localhost:5000/api/services/${id}`);
+//         const response = await fetch(`https://consulting-4rbe.onrender.com/api/services/${id}`);
 //         if (response.ok) {
 //           const data = await response.json();
 //           setService(data);
@@ -112,7 +112,7 @@ function ServicesDetails() {
   useEffect(() => {
     const fetchService = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/services/${id}`);
+        const response = await fetch(`https://consulting-4rbe.onrender.com/api/services/${id}`);
         if (response.ok) {
           const data = await response.json();
           setService(data);
@@ -164,7 +164,7 @@ function ServicesDetails() {
       <div className='container mt-5 mb-5'>
         <div className='row'>
           <div className='col-md-6'>
-            <img src={`http://localhost:5000/${service.iconUrl}`} alt={service.title} style={{width:'100%', borderRadius:'10px'}} />
+            <img src={`https://consulting-4rbe.onrender.com/${service.iconUrl}`} alt={service.title} style={{width:'100%', borderRadius:'10px'}} />
           </div>
           <div className='col-md-6'>
             <h3 className='mb-2'>{service.title}</h3>
