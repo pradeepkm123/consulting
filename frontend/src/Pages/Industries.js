@@ -7,7 +7,7 @@
 
 // function Industries() {
 //     const [industries, setIndustries] = useState([]);
-//     const BASE_URL = 'http://localhost:5000'; // Change this for production
+//     const BASE_URL = 'https://consulting-4rbe.onrender.com'; // Change this for production
 
 //     const fetchIndustries = async () => {
 //         try {
