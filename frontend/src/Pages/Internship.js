@@ -49,7 +49,7 @@ function Internship() {
     });
 
     try {
-      const response = await fetch('http://localhost:5000/api/callback/submit', {
+      const response = await fetch('https://consulting-4rbe.onrender.com/api/callback/submit', {
         method: 'POST',
         body: data,
       });
