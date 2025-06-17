@@ -112,9 +112,9 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-lg-2 pt-10">
-                            <div className="header-button">
-                                <a href="/contact">Get A Quote <i className="las la-arrow-right"></i></a>
-                            </div>
+                            // <div className="header-button">
+                            //     <a href="/contact">Get A Quote <i className="las la-arrow-right"></i></a>
+                            // </div>
                             {/* <div className="sidebar-btn">
                                 <div className="nav-btn navSidebar-button"><span><i className="las la-bars"></i></span></div>
                             </div> */}
