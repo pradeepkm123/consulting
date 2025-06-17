@@ -8,7 +8,7 @@ function InternshipList() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedEntry, setSelectedEntry] = useState(null);
 
-  const BASE_URL = 'http://localhost:5000'; // Adjust if deployed
+  const BASE_URL = 'https://consulting-4rbe.onrender.com'; // Adjust if deployed
 
   useEffect(() => {
     const fetchData = async () => {
