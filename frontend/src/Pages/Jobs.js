@@ -109,7 +109,7 @@ function Jobs() {
     return (
         <div>
             <Navbar />
-            <div className="breadcumb-area d-flex" style={{ padding: '20px 0' }}>
+            <div className="breadcumb-area d-flex mt-3">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 text-center">
@@ -137,7 +137,7 @@ function Jobs() {
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-4 col-md-4" style={{ flex: '0 0 33.333333%', maxWidth: '33.333333%' }}>
+                    <div className="col-lg-4 col-md-4">
                         <div className="sidebar" style={{ backgroundColor: '#f8f9fa', padding: '20px' }}>
                             <h3 className="sidebar-title" style={{ marginTop: '0' }}>Jobs Categories</h3>
                             {categoryEntries.map(([category, count]) => (
@@ -156,7 +156,7 @@ function Jobs() {
                             ))}
                         </div>
                     </div>
-                    <div className="col-lg-8 col-md-8" style={{ flex: '0 0 66.666667%', maxWidth: '66.666667%' }}>
+                    <div className="col-lg-8 col-md-8">
                         <div className="jobs-section">
                             {filteredJobs.length > 0 ? (
                                 filteredJobs.map((job, index) => (
@@ -165,9 +165,6 @@ function Jobs() {
                                             <div className="job-meta">
                                                 <span style={{ marginRight: '10px' }}>Type: {job.jobType}</span>
                                                 <span>Uploaded: {formatDate(job.createdAt)}</span>
-                                            </div>
-                                            <div className="heart-icon">
-                                                <i className="far fa-heart"></i>
                                             </div>
                                         </div>
 
