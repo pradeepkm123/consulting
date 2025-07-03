@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Header.css';
 import { useAuth } from './AuthContext';
 import { useNavigate } from 'react-router-dom';
+import logo from '../logo1.png';
 
 function Navbar() {
     const [open, setOpen] = useState(false);
@@ -87,8 +88,8 @@ function Navbar() {
                     <div className="row align-items-center">
                         <div className="col-lg-2">
                             <div className="header-logo">
-                                <a className="active_header" href="index.html"><img src="assets/images/logo_2.png" alt="logo" /></a>
-                                <a className="active_sticky" href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+                                <a className="active_header" href="index.html"><img src={logo} alt="logo" width={100} /></a>
+                                <a className="active_sticky" href="index.html"><img src={logo} alt="logo" /></a>
                             </div>
                         </div>
                         <div className="col-lg-7">
