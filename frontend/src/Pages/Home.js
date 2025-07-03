@@ -7,6 +7,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import FloatingButtons from '../Components/FloatingButtons';
+import logo from '../logo1.png';
 
 function Home() {
     const [loading, setLoading] = useState(true); // Add loading state
@@ -85,9 +86,9 @@ function Home() {
             <div className="consalt-header-area upper" id="sticky-header mob">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-2 pt-10">    
+                        <div className="col-lg-2 pt-10">
                             <div className="header-logo">
-                                <a href="/"><img src="assets/images/logo.png" alt="logo" /></a>
+                                <a href="/"><img src={logo} alt="logo" width={100} /></a>
                             </div>
                         </div>
                         <div className="col-lg-8">
@@ -112,9 +113,9 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-lg-2 pt-10">
-                            // <div className="header-button">
-                            //     <a href="/contact">Get A Quote <i className="las la-arrow-right"></i></a>
-                            // </div>
+                            {/* <div className="header-button">
+                                   <a href="/contact">Get A Quote <i className="las la-arrow-right"></i></a>
+                               </div> */}
                             {/* <div className="sidebar-btn">
                                 <div className="nav-btn navSidebar-button"><span><i className="las la-bars"></i></span></div>
                             </div> */}
@@ -179,17 +180,20 @@ function Home() {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="hero_content">
-                                <h1>Crafting the Digital <br />Solutions for your<br />Business</h1>
-                                <p>Continually plagiarize virtual web services with home_one maximizing
-                                    action items. Globally build front-end</p>
-                                <div className="slider_button">
+                                <h5 style={{color:'#fff',fontSize:'40px'}}>We are Payroll Company</h5>
+                                <p>At Future Solutions, we pride ourselves on being more than just a recruitment agency — we are strategic partners in building high-performing teams. As one of the most trusted HR consulting firms in India, we adopt a meticulous, people-first approach to understand your company’s culture, values, and unique hiring needs.
+
+                                    We are deeply committed to supporting both organizations and job seekers throughout their journey. For businesses, we ensure you gain access to the right talent that aligns not only with your job roles but also with your long-term vision. For candidates, we offer guidance and opportunities that foster career advancement and personal growth.
+
+                                    With Future Solutions by your side, you can count on integrity, transparency, and results-driven strategies that fuel mutual success.</p>
+                                {/* <div className="slider_button">
                                     <div className="hero_btn">
                                         <a href="/contact">Get Started Now <span></span></a>
                                     </div>
                                     <div className="slider_info">
                                         <span><i className="las la-phone" style={{ fontSize: '20px' }}></i><a href="#">CALL : +123 (45678) 000</a></span>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -258,7 +262,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="service_area boxed" style={{padding:'45px'}}>
+            <section className="service_area boxed" style={{ padding: '45px' }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -448,7 +452,7 @@ function Home() {
             <section className="brand_area">
                 <ClientSlider />
             </section>
-            <FloatingButtons/>
+            <FloatingButtons />
             <Footer />
         </div>
     );
