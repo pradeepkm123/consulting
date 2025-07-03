@@ -94,7 +94,7 @@ import FloatingButtons from '../Components/FloatingButtons';
 function Industries() {
     const [industries, setIndustries] = useState([]);
     const [loading, setLoading] = useState(true); // Add loading state
-    const BASE_URL = 'http://localhost:5000'; // Change this for production
+    const BASE_URL = 'https://consulting-4rbe.onrender.com'; // Change this for production
 
     const fetchIndustries = async () => {
         try {
@@ -129,6 +129,23 @@ function Industries() {
     return (
         <div>
             <Navbar />
+            <div className="breadcumb-area d-flex mt-3">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-12 text-center">
+                            <div className="breadcumb-content">
+                                <div className="breadcumb-title">
+                                    <h4>Industries</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="/"><i className="las la-home"></i> Home </a></li>
+                                    <li className="rotates"><i className="las la-slash"></i>Industries</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section className="blog_area inner_page">
                 <div className="container">
                     <div className="row">
@@ -146,14 +163,19 @@ function Industries() {
                             <div key={industry._id} className="col-lg-4 col-md-6">
                                 <div className="single-blog-box">
                                     <div className="single-blog-thumb">
-                                        <img src={`${BASE_URL}/uploads/${industry.imageUrl}`} alt={industry.title} />
+                                        <img
+                                            src={`http://localhost:5000/uploads/${industry.imageUrl}`}
+                                            alt={industry.title}
+                                            style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                                        />
+
                                     </div>
                                     <div className="blog-content">
                                         <div className="meta-blog">
-                                            <p><span className="solution">{industry.subtitle}</span>{new Date(industry.date).toLocaleDateString()}</p>
+                                            <p><span className="solution">{industry.title}</span>{new Date(industry.date).toLocaleDateString()}</p>
                                         </div>
                                         <div className="blog-title">
-                                            <h3><a href={`/blog-details/${industry._id}`}>{industry.title}</a></h3>
+                                            <h3><a href={`/blog-details/${industry._id}`}>{industry.subtitle}</a></h3>
                                         </div>
                                         <div className="blog_btn">
                                             <Link to={`/industries/${industry._id}`}>
@@ -167,7 +189,7 @@ function Industries() {
                     </div>
                 </div>
             </section>
-            <FloatingButtons/>
+            <FloatingButtons />
             <Footer />
             <ToastContainer />
         </div>
