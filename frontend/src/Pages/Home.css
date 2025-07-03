@@ -1,3 +1,6 @@
+@import "~font-awesome/css/font-awesome.min.css";
+
+
 .header-menu{
     margin-top: -4%;
 }
@@ -28,3 +31,7 @@ section.hero_area{
     }
 }
 
+
+.consalt-header-area{
+    margin-bottom: -100px;
+}
